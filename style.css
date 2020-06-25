@@ -131,8 +131,12 @@ button.btn-download {
 .features .feature {
   width: 30%;
 }
+.features .feature-img {
+  margin: 0 20%;
+}
 
 .features .feature-img img {
+  width: 80%;
   margin: 0 3rem;
 }
 
@@ -150,7 +154,6 @@ button.btn-download {
   color: #ffffff;
   margin: -3rem;
   padding: 10rem 3rem 2rem;
-  height: 75vh;
 }
 
 .bottom-text {
@@ -217,5 +220,16 @@ footer li {
     }
     .arrow {
       display: none;
+    }
+
+    .features .feature {
+      width: 100%;
+      margin: 3rem 0;
+    }
+    .features .features-heading {
+      font-size: 4.5rem;
+    }
+    .features .feature-details h3 {
+      font-size: 3.5rem;
     }
 }
