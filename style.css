@@ -64,7 +64,7 @@ button.btn-download {
   border: none;
   color: #ffffff;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1rem;
   background-color: #2195f2;
   padding: 1rem;
   border-radius: 10px;
@@ -178,18 +178,44 @@ footer li {
 }
 
 @media only screen 
-  and (min-device-width: 375px) 
+  and (min-device-width: 300px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+    .nav-logo {
+      width: 18rem;
+    }
+    button.btn-download {
+      font-size: 2rem;
+      padding: 1.5rem;
+    }
     .banner {
-      height: 100vh;
+      height: 100%;
+      margin-bottom: 2rem;
     }
     .banner-text {
       width: 100%;
-      padding: 5rem 0;
+      padding: 3rem 0;
+      font-size: 3rem;
+    }
+    .banner-text h2 {
+      font-size: 6rem;
+      line-height: 90px;
+
     }
     .banner-img {
-      width: 100%;
+      width: 120%;
+      margin: 0 -3rem;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+    .banner-img img {
+      width: 104%;
+    }
+    .banner .download-links img {
+      width: 15rem;
+    }
+    .arrow {
+      display: none;
     }
 }
