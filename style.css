@@ -2,15 +2,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Work Sans', sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
-body .container {
-  padding: 0 3rem;
-}
+
 
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 @keyframes bounce{
@@ -51,6 +50,7 @@ nav {
 }
 
 .container {
+  width: 100%;
   margin-top: 6rem;
 }
 
@@ -72,14 +72,17 @@ button.btn-download {
 }
 
 .banner {
-  margin-right: -10rem;
+  /* margin-right: -10rem; */
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  padding-bottom: 5rem;
+  padding: 0 3rem 5rem;
 }
 
 .banner .download-links {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 1rem;
 }
 
@@ -90,7 +93,7 @@ button.btn-download {
 }
 
 .banner-text {
-  width: 50%;
+  width: 45%;
 }
 
 .banner-header {
@@ -100,17 +103,33 @@ button.btn-download {
   letter-spacing: 3px;
 }
 
+.banner-img {
+  width: 45%;
+  margin-right: -14rem;
+}
+
 .banner-img img {
-  width: 40rem;
+  width: 100%;
 }
 
 .features {
-  justify-content: space-between;
   margin: 8rem 0;
+  padding: 0 3rem;
+}
+
+.features > div {
+  justify-content: space-between;
+
+}
+
+.features .features-heading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 0;
 }
 
 .features .feature {
-  width: 25rem;
+  width: 30%;
 }
 
 .features .feature-img img {
@@ -124,4 +143,53 @@ button.btn-download {
 
 .features .feature-details li {
   padding: .4rem 0;
+}
+
+.bottom {
+  background-color: #2999F2;
+  color: #ffffff;
+  margin: -3rem;
+  padding: 10rem 3rem 2rem;
+  height: 75vh;
+}
+
+.bottom-text {
+  margin: 0 10rem 10rem;
+  text-align: center;
+}
+
+.bottom h3 {
+  text-align: center;
+  font-size: 3rem;
+  
+
+}
+
+footer {
+  padding: 0 3rem;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+footer li {
+  list-style: none;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .banner {
+      height: 100vh;
+    }
+    .banner-text {
+      width: 100%;
+      padding: 5rem 0;
+    }
+    .banner-img {
+      width: 100%;
+    }
 }
