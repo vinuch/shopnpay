@@ -162,6 +162,9 @@ button.btn-download {
   margin: 0 10rem 10rem;
   text-align: center;
 }
+.bottom .qr-img {
+  width: 8rem;
+}
 
 .bottom h3 {
   text-align: center;
@@ -234,4 +237,20 @@ footer li {
     .features .feature-details h3 {
       font-size: 3.5rem;
     }
+    .features .feature-details li {
+      font-size: 3rem;
+      padding: 1rem;
+    }
+    .bottom .qr-img {
+      width: 8rem;
+    }
+    .bottom .qr-text {
+      margin-left: 2rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    footer {
+      font-size: 2rem;
+    }
+
 }
