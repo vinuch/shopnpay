@@ -268,4 +268,10 @@ footer li a {
       font-size: 2rem;
     }
 
+    .sponsor {
+      margin: 0 auto
+    }
+    .socials li {
+      padding: 0 1.5rem;
+    }
 }
