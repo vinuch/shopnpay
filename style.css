@@ -133,6 +133,9 @@ a.btn-download {
   text-align: center;
   font-size: 3rem;
   padding: 1rem 0;
+  line-height: 45px;
+  letter-spacing: 3px;
+
 }
 
 .features .feature {
@@ -193,7 +196,7 @@ footer li {
 footer li a {
   color: #ffffff;
   text-decoration: none;
-  
+
 }
 
 @media only screen 
